@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationDataViewController" customModule="MooooveProject" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonNext" destination="N77-X6-VVx" id="yRk-qm-SL8"/>
+                <outlet property="buttonStackView" destination="BL4-WZ-DMq" id="GAQ-ox-C8W"/>
+                <outlet property="cityTextField" destination="PxV-ZQ-887" id="HB3-0u-v9B"/>
+                <outlet property="dateBirthtextField" destination="FTF-cr-yas" id="SCn-3B-ow5"/>
+                <outlet property="manButton" destination="XsE-3t-CHf" id="VCa-YK-bFk"/>
+                <outlet property="nameTextField" destination="6bq-cU-BRa" id="4L1-O1-DB0"/>
+                <outlet property="nothingButton" destination="tLj-JF-gzn" id="WA5-AC-lQH"/>
+                <outlet property="titleLabel" destination="3iY-uM-Z73" id="bWF-Zt-h2O"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="womanButton" destination="jts-4n-HZe" id="5h3-qO-GNa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="JCy-7B-j5b">
+                    <rect key="frame" x="21.666666666666657" y="197" width="350" height="280"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введіть імʼя" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6bq-cU-BRa">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="350" id="agn-Nt-JcB"/>
+                                <constraint firstAttribute="height" constant="70" id="pgu-x1-TIA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Оберіть дату народження" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FTF-cr-yas" customClass="CustomTextField" customModule="MooooveProject" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="105" width="350" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="350" id="afB-AC-2af"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Оберіть місто" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PxV-ZQ-887" customClass="CustomTextField" customModule="MooooveProject" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="210" width="350" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="350" id="KOH-LR-nfS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="350" id="MPi-zg-pNi"/>
+                        <constraint firstAttribute="height" constant="280" id="Sfn-Lh-E8W"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="BL4-WZ-DMq">
+                    <rect key="frame" x="16" y="502" width="361" height="159"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLj-JF-gzn">
+                            <rect key="frame" x="0.0" y="0.0" width="72" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="w0x-0U-Z55" userLabel="height = 30"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="6zI-zu-mRj"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsE-3t-CHf">
+                            <rect key="frame" x="0.0" y="59" width="72" height="42"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="nzU-Bl-trq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jts-4n-HZe">
+                            <rect key="frame" x="0.0" y="117" width="72" height="42"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="Th9-f9-b0q"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Додаткова інформація користувача" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3iY-uM-Z73">
+                    <rect key="frame" x="16" y="75" width="361" height="71.666666666666686"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <color key="textColor" systemColor="systemBackgroundColor"/>
+                    <color key="highlightedColor" systemColor="systemBackgroundColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N77-X6-VVx">
+                    <rect key="frame" x="21.666666666666657" y="732" width="350" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="350" id="9cA-pV-a6Z"/>
+                        <constraint firstAttribute="height" constant="70" id="x9d-Pa-MtA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Продовжити"/>
+                    <connections>
+                        <action selector="tappedContinueButton:" destination="-1" eventType="touchUpInside" id="fvT-Mt-LZ7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="JCy-7B-j5b" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3oQ-R2-ZaR"/>
+                <constraint firstItem="3iY-uM-Z73" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="87c-v9-8eB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3iY-uM-Z73" secondAttribute="trailing" constant="16" id="9yS-Ja-zdf"/>
+                <constraint firstItem="3iY-uM-Z73" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="IUh-GA-0Yi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="N77-X6-VVx" secondAttribute="bottom" constant="16" id="KzW-wx-U7N"/>
+                <constraint firstItem="BL4-WZ-DMq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Ni7-3T-Q9N"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BL4-WZ-DMq" secondAttribute="trailing" constant="16" id="e7z-ma-TvS"/>
+                <constraint firstItem="N77-X6-VVx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fMq-qt-6Kt"/>
+                <constraint firstItem="JCy-7B-j5b" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="138" id="jro-BE-23F"/>
+                <constraint firstItem="BL4-WZ-DMq" firstAttribute="top" secondItem="JCy-7B-j5b" secondAttribute="bottom" constant="25" id="qiH-Dt-zx2"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="47.887323943661976"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
